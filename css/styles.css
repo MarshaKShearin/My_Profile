@@ -73,10 +73,14 @@ body {
     max-width: 100%;
 }
 
-.skillsSection,
-.contactSection {
+.skillsSection {
     background-color: #ef8d25;
     color: #fff;
+}
+
+.contactSection {
+    background-color: #fff;
+    color: #000;
 
 }
 
@@ -165,19 +169,22 @@ body {
 }
 
 .contactButton {
-    color: #fff;
     padding: 15px 20px;
-    display: inline-block;
-    margin-top: 20px;
-    border: 1px solid #fff;
+    color: #fff;
+    background-color: #ef8d25;
+    border: 1px solid #ef8d25;
     border-radius: 50px;
-}
-
-.contactButton:hover {
-    text-decoration: none;
-    color: #ef8d25;
-    background-color: #fff;
-}
+    display: inline-block;
+    box-shadow: 0 3px rgb(97, 96, 96);
+  }
+  
+  .contactButton:hover {background-color: #f8af5b}
+  
+  .contactButton:active {
+    background-color: #ef8d25;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .filter a {
     color: #000000;
@@ -227,6 +234,7 @@ body {
     width: 100%;
     
     -webkit-transition: all 0.2s linear, 0.2s;
+    transition: all 0.2s linear, 0.2s;
     -moz-transition: all 0.2s linear, 0.2s;
     -o-transition: all 0.2s linear, 0.2s;
     -ms-transition: all 0.2s linear, 0.2s;
@@ -275,6 +283,7 @@ body {
     opacity: 0;
 
     -webkit-transition: all 0.2s linear, 0.2s;
+    transition: all 0.2s linear, 0.2s;
     -moz-transition: all 0.2s linear, 0.2s;
     -o-transition: all 0.2s linear, 0.2s;
     -ms-transition: all 0.2s linear, 0.2s;
@@ -311,6 +320,7 @@ body {
 
 .items .item:hover img {
     -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
     -moz-transform: scale(1.25, 1.25);
     -o-transform: scale(1.25, 1.25);
     -ms-transform: scale(1.25, 1.25);
@@ -340,7 +350,7 @@ body {
 
 
 #navigation li {
-    padding 0 10px;
+    padding: 0 10px;
 }
 
 
@@ -389,4 +399,10 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.aboutImage {
+    border: 1.5px solid #000000;
+    border-radius: 3px;
+    box-shadow: 0 2px rgb(97, 96, 96);
 }
